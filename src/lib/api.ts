@@ -1,5 +1,5 @@
 // Render backend URL - apna actual URL .env.local mein set karo
-const API_BASE = "https://invoice-ai-web-server-1.onrender.com"
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "https://invoice-ai-web-server-1.onrender.com"
 
 export const api = {
   base: API_BASE,
